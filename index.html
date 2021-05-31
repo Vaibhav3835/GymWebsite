@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vfitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin 0px;
+            padding 0px;
+            background-image: url(weightlifting-2227543_960_720.webp);
+            background-repeat: no-repeat;
+            background-color: black;
+            background-position: center right;
+            height: 996px;
+            font-family: 'Ubuntu Condensed', sans-serif;
+            color: white;
+
+        }
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 50px;
+        }
+
+        .mid {
+
+            width: 650px;
+            ;
+            display: inline-block;
+            position: absolute;
+            left: 300px;
+            top: 50px;
+        }
+
+        .right {
+
+            display: inline block;
+            position: absolute;
+            right: 12px;
+            top: 43px;
+        }
+
+        .left img {
+            width: 137px;
+            height: 61px;
+        }
+
+        .navb {
+            border: hotpink 2px solid;
+        }
+
+        .navb li {
+            display: inline-block;
+        }
+
+        .navb li a {
+            text-decoration: none;
+            margin: 3px 23px;
+            font-size: 23px;
+            color: white;
+        }
+
+        .navb li a:hover {
+            color: grey;
+        }
+
+        .navb li a:active {
+            color: red
+        }
+
+        #logoline {
+            font-size: 19px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: -7px;
+            color: #346a99;
+        }
+
+        .btn {
+            margin: 16px 1px;
+            background-color: black;
+            color: white;
+            border: hotpink 2px solid;
+            font-size: 24px;
+        }
+
+        .btn:hover {
+            color: red;
+            cursor: pointer;
+
+        }
+
+        .container {
+            border: white 2px solid;
+            position: absolute;
+            top: 250px;
+            left: 221px;
+            height: 497px;
+            width: 550px;
+            display: block;
+            border-radius: 36px;
+
+            background-color: black;
+        }
+
+
+        .container h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 26px;
+            color: rgb(90, 15, 230);
+
+        }
+
+
+        .form input {
+            width: 515px;
+            margin: 6px;
+            margin-left: 14px;
+            height: 37px;
+            border-radius: 13px;
+            text-align: center;
+            font-size: 21px;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .form input {
+            color: red;
+
+        }
+
+        .btn2 {
+            width: 324px;
+            margin: 6px;
+            height: 37px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 23px;
+            margin-left: 99px;
+            background-color: grey;
+        }
+
+        .btn2:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo2.png" alt="">
+            <div id="logoline">
+                World Is Here
+            </div>
+
+        </div>
+        <div class="mid">
+            <nav class="navb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fitness calculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h3>
+            Join today at best fitness centre of Mgrah.
+        </h3>
+        <form action="backend.php">
+
+            <div class="form">
+                <input type="text" name="myname" id="Name" placeholder="Enter your Name">
+            </div>
+
+            <div class="form">
+                <input type="number" name="mycontact" id="contact" placeholder="Enter your Contact No">
+            </div>
+            <div class="form">
+
+                <input type="text" name="myemail" id="email" placeholder="Enter your Email address">
+            </div>
+            <div class="form">
+
+                <input type="number" name="myage" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form">
+                <input type="text" name="mylocality" id="locality" placeholder="Enter your Locality">
+
+            </div>
+            <div class="form">
+                <input type="text" name="myaddress" id="address" placeholder="Enter your Full Address">
+
+            </div>
+            <button class="btn2">
+                Submit
+            </button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
